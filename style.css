@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    width: 95%;
+    margin: 0 auto;
+    font-family: "Epilogue";
+}
+
+nav {
+    display: flex;
+    padding-top: 2rem;
+    gap: 3.5rem;
+    align-items: center;
+    margin-bottom: 6rem;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.nav-items {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 2.5rem;
+}
+
+.nav-items li {
+    cursor: pointer;
+    color: #696969;
+}
+
+.nav-items li:hover {
+    color: hsl(0, 0%, 8%);
+    font-weight: 500;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown::after {
+    content: url('/images/icon-arrow-down.svg');
+    margin-left: .5rem;
+}
+
+.button {
+    border: 2px solid #696969;
+    padding: .75rem 1rem;
+    border-radius: 10px;
+}
+
+.button:hover {
+    color: #ffffff !important;
+    background-color: #696969;
+}
+
+.dropdown-content {
+    display: block;
+    position: absolute;
+    margin-top: 1rem;
+    margin-left: -2.5rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 25px 5px #ececec;
+    padding: 1rem;
+}
+
+.dropdown-content div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+
+.scale {
+    width: 1.5rem;
+}
+
+.dropdown-content a {
+    display: block;
+    text-decoration: none;
+    color: #696969;
+    padding: .7rem .2rem .7rem 1.5rem;
+}
+
+.dropdown-company {
+    position: absolute;
+    margin-top: 1rem;
+    margin-left: -1.5rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 25px 5px #ececec;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.dropdown-company a {
+    display: block;
+    text-decoration: none;
+    color: #696969;
+}
+
+.content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.hero-img {
+    max-height: 75vh;
+    margin-left: 3rem;
+}
+
+.content h1 {
+    font-size: 85px;
+    margin-bottom: 3rem;
+}
+
+.content p {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 3rem;
+}
+
+.content button {
+    color: white;
+    background-color: black;
+    border: none;
+    padding: 1.5rem 3rem;
+    border-radius: 1.3rem;
+    font-size: 1.5rem;
+    margin-bottom: 7rem;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.content button:hover {
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+}
+
+.clients {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hide {
+    display: none;
+}

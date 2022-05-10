@@ -1,39 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Intro section with dropdown navigation</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Features
-  Company
-  Careers
-  About
-
-  Login
-  Register
-
-  Make remote work
-
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
-
-  Learn more
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="main.js"></script>
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  </head>
+  <body>
+    <nav>
+      <img class="logo" src="/images/logo.svg" alt="logo" />
+      <div class="nav-container">
+        <ul class="nav-items">
+          <div>
+            <li class="dropdown">Features</li>
+            <div class="dropdown-content menu hide">
+              <div>
+                <img class="scale" src="/images/icon-todo.svg" alt="" />
+                <a href="#">Todo List</a>
+              </div>
+              <div>
+                <img class="scale" src="/images/icon-calendar.svg" alt="" />
+                <a href="#">Calender</a>
+              </div>
+              <div>
+                <img class="scale" src="/images/icon-reminders.svg" alt="" />
+                <a href="#">Reminder</a>
+              </div>
+              <div>
+                <img class="scale" src="/images/icon-planning.svg" alt="" />
+                <a href="#">Planning</a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <li class="dropdown">Company</li>
+            <div class="dropdown-company menu hide">
+              <a href="#">History</a>
+              <a href="#">Our Team</a>
+              <a href="#">Blog</a>
+            </div>
+          </div>
+          <li><a>Careers</a></li>
+          <li>About</li>
+        </ul>
+        <ul class="nav-items">
+          <li>Login</li>
+          <li class="button">Register</li>
+        </ul>
+      </div>
+    </nav>
+    <section class="content-container">
+      <div class="content">
+        <h1>Make<br>remote work</h1>
+        <p>
+          Get your team in sync, no matter your location.<br />
+          Streamline processes, create team rituals, and<br />
+          watch productivity soar.
+        </p>
+        <button>Learn more</button>
+        <div class="clients">
+          <img src="/images/client-databiz.svg" alt="">
+          <img src="/images/client-audiophile.svg" alt="">
+          <img src="/images/client-meet.svg" alt="">
+          <img src="/images/client-maker.svg" alt="">
+        </div>
+      </div>
+      <img class="hero-img" src="/images/image-hero-desktop.png" alt="hero" />
+    </section>
+  </body>
 </html>
